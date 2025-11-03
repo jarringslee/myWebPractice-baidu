@@ -1,0 +1,646 @@
+/* 全局样式 */
+        * {
+            padding: 0;
+            margin: 0;
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+            padding-left: 12px;
+        }
+
+        a:hover {
+            color: #4e71f2;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* 头部样式 */
+        .header {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        .header .left {
+            float: left;
+        }
+
+        .header .right {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 100; /* 层叠 */
+            padding-right: 24px;
+            float: right;
+        }
+
+        .header .li_1 {
+            float: left;
+            font: 13px/23px Arial, sans-serif;
+            color: #222;
+            position: relative;
+            margin-right: 15px;
+            margin-top: 19px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .right #more_li {
+            color: #222;
+            position: relative;
+            margin-right: 35px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .r_btn0{
+            font-size: 14px; 
+            color: blue;
+        }
+
+        .r_btn0:hover{
+            color: rgb(184, 184, 244);
+        }
+
+        .header .right .r_btn1 {
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        .right #more_menu {
+            display: none;
+            position: absolute;
+            top: 28px;
+            left: -14px;
+            width: 85px;
+            height: 195px;
+            line-height: 22px;
+            text-align: left;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
+            margin-top: 15px;
+            
+        }
+
+        .right #more_menu li {
+            margin-top: 9px;
+        }
+
+        #more_li:hover #more_menu {
+            display: block;
+        }
+
+        .header .right .r_btn2 {
+            display: inline-block;
+            
+            margin-top: 19px;
+            background-color: #4e71f2;
+            padding-left: 2px;
+            font-size: 14px;
+            height: 24px;
+            width: 48px;
+            color: #fff;
+            line-height: 24px;
+            border-radius: 6px;
+
+        }
+
+        /* 更多菜单样式 */
+        #more_wrap {
+            position: relative;
+            display: block;
+            z-index: 999;
+        }
+
+
+        #more_box {
+            display: none;
+            position: absolute;
+            right: -12px;
+            top:30px;
+            width: 260px;
+            height: 330px;
+            line-height: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        #more_box li {
+            margin-left: 18px;
+        }
+
+        #more_list:hover #more_box {
+            display: block;
+        }
+
+        #more_box img {
+            height: 42px;
+            width: 42px;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            border-radius: 12px;
+        }
+
+        .tag_more {
+            width: 42px;
+            text-align: center;
+        }
+
+        .more_li {
+            float: left;
+            line-height: 24px;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-top: 16px;
+        }
+
+        /* 主体部分样式 */
+        .main {
+            min-height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            /* padding-top: 20px; */
+            margin-top: 30px;
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+
+        #lg {
+            display: block;
+            margin: 0 auto 30px;
+            width: 270px;
+            height: 129px;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 40px;
+            position: relative; /* 为下拉菜单定位 */
+        }
+
+        .search-input-group {
+            display: flex;
+            align-items: center;
+            position: relative; /* 为相机图标提供定位上下文 */
+        }
+
+        .search_l {
+            width: 546px;
+            height: 44px;
+            font-size: 16px;
+            vertical-align: top;
+            border: 2px solid #c4c7ce;
+            border-radius: 10px 0 0 10px;
+            background-color: #fff;
+            color: #222;
+            padding: 0 15px;
+            box-sizing: border-box;
+            outline: 0;
+            z-index: 10;
+        }
+
+        .search_r {
+            cursor: pointer;
+            width: 100px;
+            height: 44px;
+            line-height: 44px;
+            background-color: #4e6ef2;
+            border-radius: 0 10px 10px 0;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            transition: background-color 0.3s;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search_r:hover {
+            background-color: #4662d9;
+        }
+
+        .search_l:hover {
+            border-color: #a7aab5;
+        }
+
+        .search_l:focus{
+            border-color: blue;
+            border-bottom: none;
+            border-radius: 10px 0 0 0;
+        }
+
+        /* 搜索下拉菜单样式 */
+        .search-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 542px;
+            background: white;
+            border: 2px solid blue;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            z-index: 9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search_l:focus ~ .search-menu {
+            display: block;
+        }
+
+        .search-menu-item {
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #333;
+            /* border-bottom: 1px solid #f0f0f0; */
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-menu-item::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            bottom: 0;
+            height: 1px;
+            background: #f0f0f0;
+        }
+
+        .search-menu-item:last-child::before {
+            display: none;
+        }
+
+        .search-menu-item .hot-rank {
+            display: inline-block;
+            width: 16px;
+            text-align: center;
+            margin-right: 10px;
+            color: #fe2d46;
+        }
+
+        .search-menu-item:nth-child(2) .hot-rank {
+            color: #ff6600;
+        }
+
+        .search-menu-item:nth-child(3) .hot-rank {
+            color: #faa90e;
+        }
+
+        .search-menu-item:nth-child(4) .hot-rank {
+            color: #9b9fac;
+        }
+
+        .search-menu-item:hover {
+            background-color: #f5f7ff;
+        }
+
+        /* 广告图片容器 */
+        .ad-container {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0 50px 0; /* 下移热搜框约70px */
+        }
+        
+        .ad-container a {
+            display: inline-block;
+            padding: 0;
+        }
+        
+        .ad-container img {
+            width: 450px;
+            height: auto; /* 按比例缩放 */
+            display: block;
+            margin: 0 auto;
+            /* border-radius: 8px; */
+            /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+        }
+
+        .hot-news-container {
+            width: 670px;
+            margin-top: 0;
+        }
+
+        #sss{
+            padding-left:14px;
+            padding-top: 6px; 
+            font-weight: 700;
+        }
+
+        #sss:hover{
+            text-decoration: none;
+        }
+
+        .hotsearch td a:hover {
+            text-decoration: none;
+        }
+
+
+        .main table {
+            width: 100%;
+            font-size: 15px;
+            border-collapse: collapse;
+        }
+
+        .main #hhh {
+            color: #a6a9b4;
+            padding-right: 20px;
+            float: right;
+            cursor: pointer;
+            
+        }
+        #hhh:hover{
+            text-decoration: none;
+            color: blue;
+        }
+
+        ._new {
+            display: inline-block;
+            background-color: #ff455b;
+            width: 14px;
+            height: 19px;
+            color: #fff;
+            padding: 0 2px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 19px;
+            margin-left: 5px;
+        }
+
+        ._hot {
+            display: inline-block;
+            background-color: #ff9812;
+            width: 14px;
+            height: 19px;
+            color: #fff;
+            padding: 0 2px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 19px;
+            margin-left: 5px;
+        }
+
+        /* 热搜条目样式 */
+        .news_type td {
+            padding: 8px 0; /* 上下间距20px */
+            vertical-align: middle;
+        }
+
+        .news_type td:first-child {
+            padding-left: 14px;
+        }
+
+        /* 置顶图标样式 */
+        .top-icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 15px; /* 图标和内容间距15px */
+        }
+
+        /* 热搜序号样式 */
+        .hot-rank {
+            display: inline-block;
+            width: 16px;
+            text-align: center;
+            margin-right: 10px; /* 序号和内容间距15px */
+        }
+
+        .hot-news-container .news_type a:hover {
+            text-decoration: underline;
+        }
+
+        /* 页脚样式 */
+        .footer {
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            bottom: 0;
+            background-color: #fbfbfb;
+            line-height: 40px;
+            font-size: 12px;
+            font-family: 黑体;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .footer_l ul, .footer_r ul {
+            display: flex;
+        }
+
+        .footer_l li a {
+            padding-left: 14px;
+            color: #9195a3;
+        }
+
+        .footer_l li a:hover {
+            color: #222;
+        }
+
+        .footer_r li a {
+            padding-right: 15px;
+            font-size: 16px;
+        }
+        
+        /* 相机图标样式 */
+        .camera-btn {
+            position: absolute;
+            right: 120px; /* 距离搜索按钮的位置 */
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-image: url(./小相机111.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            transition: transform 0.2s, opacity 0.2s;
+            opacity: 0.7;
+            z-index: 11;
+        }
+        
+        .camera-btn:hover {
+            background-image: url(./小相机222.png);
+            opacity: 1;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .camera-btn::after {
+            content: "上传照片";
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        
+        .camera-btn:hover::after {
+            opacity: 1;
+        }
+        
+        /* 固定导航按钮 */
+        .fixed-nav {
+            position: fixed;
+            right: 30px;
+            bottom: 90px;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            width: 30px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn1 {
+            background: url(./固定1.png) no-repeat;
+        }
+
+        .nav-btn2 {
+            background: url(./固定2.png) no-repeat;
+        }
+        
+        .nav-btn:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .nav-btn:last-child {
+            margin-bottom: 0;
+        }
+        
+        .nav-btn::after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 8px;
+            /* background: #4e6ef2; */
+            border-radius: 50%;
+        }
+        
+        /* 按钮1的提示框 */
+        .nav-btn.btn1:hover .tooltip {
+            opacity: 1;
+            transform: translateX(-10px);
+            background-color: #1e1e1e;
+            color:#fff;
+        }
+        
+        .nav-btn .tooltip {
+            position: absolute;
+            background: white;
+            border-radius: 4px;
+            padding: 0 12px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .btn1 .tooltip {
+            right: 45px;
+            top: 0;
+            transform: translateX(10px);
+        }
+        
+        /* 按钮2的提示框 */
+        .nav-btn.btn2:hover .qr-tooltip {
+            opacity: 1;
+            transform: translateX(-25px);
+        }
+        
+        .qr-tooltip {
+            position: absolute;
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            display: flex;
+            gap: 15px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: translateX(5px);
+            pointer-events: none;
+            left: -300px;
+            top: 0;
+        }
+        
+        .qr-content {
+            flex: 1;
+        }
+        
+        .qr-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .qr-subtitle {
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .qr-code-placeholder {
+            width: 80px;
+            height: 80px;
+            background: #f0f2f5;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 12px;
+        }

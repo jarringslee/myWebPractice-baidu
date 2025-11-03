@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" href="./百度图标.webp" type="image/x-icon">
+    <link rel="stylesheet" href="baidu.css">
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <ul class="left">
+            <li class="li_1"><a href="">新闻</a></li>
+            <li class="li_1"><a href="">hao123</a></li>
+            <li class="li_1"><a href="">地图</a></li>
+            <li class="li_1"><a href="">贴吧</a></li>
+            <li class="li_1"><a href="">视频</a></li>
+            <li class="li_1"><a href="">图片</a></li>
+            <li class="li_1"><a href="">网盘</a></li>
+            <li class="li_1"><a href="">文库</a></li>
+            <li class="li_1"><a href="">AI</a></li>
+
+            <li class="li_1" id="more_list">
+                <div id="more_wrap"> <a href="" style="display: inline-block; margin-bottom: 30px;">更多</a>
+                    <div id="more_box">
+                        <ul>
+                            <li class="more_li">
+                                <img src="./翻译.png" alt="">
+                                <div class="tag_more">翻译</div>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./学术.png" alt="">
+                                    <div class="tag_more">学术</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./百科.png" alt="">
+                                    <div class="tag_more">百科</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./知道.png" alt="">
+                                    <div class="tag_more">知道</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./健康.png" alt="">
+                                    <div class="tag_more">健康</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./营销推广.png" alt="">
+                                    <div class="tag_more">营销推广</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./直播.png" alt="">
+                                    <div class="tag_more">直播</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./音乐.png" alt="">
+                                    <div class="tag_more">音乐</div>
+                                </a>
+                            </li>
+                            <li class="more_li">
+                                <a href=""><img src="./橙篇.png" alt="">
+                                    <div class="tag_more">橙篇</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="right">
+            <a class="r_btn1 r_btn0">答题</a>
+            <div id="more_li">
+                <span class="r_btn1"><a href="">设置</a></span>
+                <div id="more_menu">
+                    <ul>
+                        <li><a href="">搜索设置</a></li>
+                        <li><a href="">首页设置</a></li>
+                        <li><a href="">高级搜索</a></li>
+                        <li><a href="">关闭预测</a></li>
+                        <li><a href="">隐私设置</a></li>
+                        <li><a href="">关闭热搜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="" class="r_btn2">登录</a>
+        </div>
+    </div>
+
+
+    <!--中间-->
+    <div class="main">
+        <div class="center-container">
+            <!-- 百度Logo -->
+            <div class="logo-container">
+                <a href="https://www.baidu.com/s?wd=%E7%99%BE%E5%BA%A6%E7%83%AD%E6%90%9C&sa=ire_dl_gh_logo_texing&rsv_dl=igh_logo_pcs"
+                    target="_blank"><img id="lg" src="./logo动态.gif" alt="百度"></a>
+            </div>
+
+            <!-- 搜索框 -->
+            <div class="search-container">
+                <div class="search-input-group">
+                    <input class="search_l" placeholder="韩国总统致电李在明">
+                    <button class="camera-btn" title="上传照片"></button>
+                    <div class="search_r">百度一下</div>
+                    <!-- 下拉热搜菜单 -->
+                    <div class="search-menu">
+                        <div class="search-menu-item">
+                            百度热搜
+                        </div>
+                        <div class="search-menu-item">
+                            特朗普：我和马克思的关系已经结束
+                        </div>
+                        <div class="search-menu-item">
+                            破万亿 以旧换新主推消费升级
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 添加的广告图片 -->
+            <div class="ad-container">
+                <a href="#">
+                    <img src="./deepseek.png" alt="百度AI广告">
+                </a>
+            </div>
+
+            <!-- 热搜 -->
+            <div class="hot-news-container">
+                <table>
+                    <tr class="news_type hotsearch">
+                        <td><a href="https://top.baidu.com/board?platform=pc&sa=pcindex_entry" id="sss">百度热搜 ></a></td>
+                        <td style="width: 300px;"><a id="hhh">换一换</a></td>
+                    </tr>
+                    <!-- 热搜-->
+                    <tr class="news_type">
+                        <td><a href=""><img class="top-icon" src="./置顶.png" alt="置顶">不负青春 不负韶华</a></td>
+                        <td><a href=""><span class="hot-rank" style="color:#9b9fac;">5</span>五胞胎同时参加高考 50多万学费...<span
+                                    class="_new">新</span></a></td>
+                    </tr>
+                    <tr class="news_type">
+
+                        <td><a href=""><span class="hot-rank" style="color:#fe2d46">1</span>济南一烤鸭店陪考停业告示火了<span
+                                    class="_new">新</span></a></td>
+                        <td><a href=""><span class="hot-rank" style="color:#9b9fac;">6</span>现眼包弟弟穿红绿色旗袍助考姐姐</a></td>
+                    </tr>
+                    <tr class="news_type">
+                        <td><a href=""><span class="hot-rank" style="color:#ff6600;">2</span>特朗普：我和马克思的关系已经结...<span
+                                    class="_hot">热</span></a></td>
+                        <td><a href=""><span class="hot-rank" style="color:#9b9fac;">7</span>遭遇重大伤亡后 瓦格纳集团宣布撤军</a></td>
+                    </tr>
+                    <tr class="news_type">
+                        <td><a href=""><span class="hot-rank" style="color:#faa90e;">3</span>破万亿 以旧换新主推消费升级</a></td>
+                        <td><a href=""><span class="hot-rank" style="color:#9b9fac;">8</span>中国游客在日本闹市被砍 中使馆发声</a></td>
+                    </tr>
+                    <tr class="news_type">
+                        <td><a href=""><span class="hot-rank" style="color:#9b9fac;">4</span>长沙暴雨：楼梯成瀑布 积水没过轮胎</a></td>
+                        <td><a href=""><span class="hot-rank" style="color:#9b9fac;">9</span>范玮琪演唱会门票跌至5.6折</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!--页脚-->
+    <div class="footer">
+        <div class="footer_l">
+            <ul>
+                <li><a href="">关于百度</a></li>
+                <li><a href=""> About Baidu</a></li>
+                <li><a href="">使用百度前必读</a></li>
+                <li><a href="">帮助中心</a></li>
+                <li><a href="">企业推广</a></li>
+                <li><a href="">京公网安备11000002000001号</a></li>
+                <li><a href="">京ICP证030173号</a></li>
+                <li><a href="">∧</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 固定导航按钮 -->
+    <div class="fixed-nav">
+        <a href="#" class="nav-btn nav-btn1 btn1">
+            <div class="tooltip">辅助模式</div>
+        </a>
+        <a href="#" class="nav-btn nav-btn2 btn2">
+            <div class="qr-tooltip">
+                <div class="qr-content">
+                    <div class="qr-title">百度APP扫码登录</div>
+                    <div class="qr-subtitle">百度一下，生活更好</div>
+                </div>
+                <div class="qr-code-placeholder">二维码</div>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
